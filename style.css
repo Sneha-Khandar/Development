@@ -1,0 +1,582 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Header  */
+
+.heading-title h1{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.resNav{
+    width: 90%;
+    margin: auto;
+    /* display: none; */
+}
+
+.resNav ul{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+
+.resNav li{
+    list-style: none;
+}
+
+.resNav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header{
+    position: sticky;
+    z-index: 11;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    border-bottom: 1px solid white;
+    height: 70px;
+    overflow-y: hidden;
+    transition: all 0.4s;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.hamburger img{
+    width: 50px;
+    cursor: pointer;
+}
+
+.navlinks > ul{
+    display: flex;
+    gap: 20px;
+
+}
+
+.navlinks li{
+    list-style: none;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    transition: transform 0.15s ease;
+}
+
+.navlinks li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navlinks li:hover{
+    transform: translateY(-4px);
+    transition: all 0.15s;
+
+    &a{
+        color: cornflowerblue;
+    }
+    
+}
+
+.heading-button button{
+    padding: 9px 20px;
+    background-color: rgb(106, 106, 255);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.resNav-btn button{
+    padding: 9px 20px;
+    background-color: rgb(106, 106, 255);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.resNav-btn button:hover{
+    background-color: blue;
+    transition: all 0.4s;
+}
+
+.heading-button button:hover{
+    background-color: blue;
+    transition: all 0.4s;
+}
+
+/* Home Page  */
+
+#home{
+    scroll-margin-top: 200px;
+}
+
+.home-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center ;
+    margin-block: 100px;
+
+}
+
+.home-text, .home-image{
+    width: 50%;
+}
+
+.home-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.home-text h1{
+    font-size: 4rem;
+}
+
+.home-text p{
+    font-size: larger;
+    /* margin-top: 15px; */
+}
+
+.home-image{
+    display: flex;
+    justify-content: center;
+}
+
+.home-image img{
+   height: 75vh;
+}
+
+.home-text button{
+    padding: 15px 25px;
+    background-color: rgb(106, 106, 255);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.home-text button:hover{
+    background-color: blue;
+    transition: all 0.4s;
+}
+
+/* Service Page  */
+
+
+.container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-block: 200px;
+    /* background: red; */
+}
+
+#service{
+    scroll-margin-top: 170px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-content h1{
+    font-size: 2.8rem;
+}
+
+.main-content-para p{
+    font-size: larger;
+
+}
+
+.main-image{
+    width: 50%;
+}
+
+.main-image img{
+    width: 100%;
+}
+
+.main-content-card{
+    display: flex;
+    justify-content: space-around;    
+}
+
+.section-card{
+    background-color: rgb(35, 35, 35);
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 170px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.section-card:hover{
+    background-color: rgb(64, 64, 64);
+    transition: all 0.4s;
+}
+
+
+/* Product */
+
+#product{
+    scroll-margin-top: 100px;
+}
+
+.product-container{
+    width: 90%;
+    margin: auto;
+    /* background: red; */
+    margin-block: 300px;
+}
+
+.product-heading, .product-description{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.product-heading h1{
+    font-size: 3rem;
+}
+
+.product-description p{
+    font-size: larger;
+    margin-top: 10px;
+}
+
+.p-card-logo{
+    width: 100px;
+    height: 100px;
+    background: rgb(59, 59, 59);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+
+.p-card-logo img{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.prodcut-cards{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.p-card{
+    width: 300px;
+    height: 450px;
+    border-radius: 5px;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding-inline: 30px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.p-card:hover{
+    background-color: rgb(58, 58, 58);
+    transition: all 0.4s;
+}
+
+.p-card:hover > .p-card-logo{
+    transition: all 0.4s;
+    background: rgb(102, 102, 102);
+}
+
+.p-card-heading h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.p-card-description p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+/* About Us Page  */
+
+.about-container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-heading{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.about-text{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about-text p{
+    font-size: 1.2rem;
+}
+
+.about-links{
+    display: flex;
+    gap: 20px;
+}
+
+.about-links img{
+    /* border-radius: 50%; */
+    /* background-color: white; */
+    cursor: pointer;
+    width: 50px;
+    transition: all 0.4s;
+}
+
+.about-links img:hover{
+    transition: all 0.4s;
+    box-shadow: 0px 0px 5px 0.3px white;
+}
+
+.about-copyright{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-copyright a{
+    color: rgb(106, 106, 255);
+}
+
+
+/* Media Queries  */
+
+@media screen and (max-width: 1200px){
+    .p-card{
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .home-text h1{
+        font-size: 3rem;
+    }
+
+    .section-card{
+        width: 130px;
+    }
+
+    .main-content h1 {
+        font-size: 2rem;
+    } 
+
+    .p-card{
+        width: 210px;
+    }
+
+    .p-card-heading h1{
+        font-size: 1.8rem;
+    }
+
+    .home-image img{
+        height: 20%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .p-card{
+        height: 400px;
+    }
+
+    .p-card-description p{
+        font-size: 1rem;
+    }
+
+    .home-image img{
+        height: 55vh;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .home-container{
+        flex-direction: column;
+    }
+    
+    .home-text, .main-content{
+        width: 90%;
+    }
+
+    .navlinks, .heading-button{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .product-heading h1, .main-content h1, .home-text h1, .about-heading h1, .about-text-heading h1, .about-text-bottom-heading h1{
+        font-size: 2rem;
+    } 
+
+    .home-text p, .main-content-para p, .product-description p, .about-text p{
+        font-size: 16px;
+    }
+
+    .prodcut-cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .p-card {
+        padding-inline: 10px;
+        width: 250px;
+    }
+
+    .p-card-heading h1{
+        font-size: 25px;
+    }
+
+    .p-card-description p{
+        font-size: 14px;
+    }
+
+    .main-image{
+        width: 70%;
+    }
+
+    .section-card h1{
+        font-size: 25px;
+    }
+
+    .main-content-card {
+        gap: 10px;
+    }
+
+    .section-card p{
+        font-size: 14px;
+    }
+
+  
+
+}
+
+000
+@media screen and (max-width: 600px) {
+    .home-image img{
+        height: 55vh;
+    }
+    .home-image{
+        width: 90%;
+    }
+    .home-container{
+        gap: 30px;
+    }
+
+    .home-container{
+        margin-block: 70px;
+    }
+
+    .container, .product-container{
+        margin-block: 150px;
+    }
+
+    .about-container{
+        width: 90%;
+    }
+    
+    .about-text-heading h1{
+        font-size: x-large;
+    }
+
+    .about-text-bottom-heading h1{
+        font-size: x-large;
+        margin-top: 30px;
+    }
+
+    .about-text-heading p{
+        font-size: small;
+    }
+
+    .about-copyright{
+        margin-block: 30px;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .about-links img{
+        width: 35px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .home-image img{
+        height: 40vh;
+    }
+}
+
